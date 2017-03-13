@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSPSuite.DataBinding.DevExpress.Starter", "tests\OSPSuite.DataBinding.DevExpress.Starter\OSPSuite.DataBinding.DevExpress.Starter.csproj", "{6AE3DD4C-9FE3-40F6-B44C-B65A8E7A4084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSPSuite.DataBinding.DevExpress", "src\OSPSuite.DataBinding.DevExpress\OSPSuite.DataBinding.DevExpress.csproj", "{7715F0E5-FC6E-4DCE-A8B2-1BBEA112281B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSPSuite.DataBinding.DevExpress.Tests", "tests\OSPSuite.DataBinding.DevExpress.Tests\OSPSuite.DataBinding.DevExpress.Tests.csproj", "{10B7CF4B-B96F-4B01-9E3A-1473726060BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B40501D0-BDA8-40BB-A73E-8B97445A77BB}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		SolutionInfo.cs = SolutionInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AE3DD4C-9FE3-40F6-B44C-B65A8E7A4084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE3DD4C-9FE3-40F6-B44C-B65A8E7A4084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE3DD4C-9FE3-40F6-B44C-B65A8E7A4084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE3DD4C-9FE3-40F6-B44C-B65A8E7A4084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7715F0E5-FC6E-4DCE-A8B2-1BBEA112281B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7715F0E5-FC6E-4DCE-A8B2-1BBEA112281B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7715F0E5-FC6E-4DCE-A8B2-1BBEA112281B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7715F0E5-FC6E-4DCE-A8B2-1BBEA112281B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B7CF4B-B96F-4B01-9E3A-1473726060BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B7CF4B-B96F-4B01-9E3A-1473726060BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B7CF4B-B96F-4B01-9E3A-1473726060BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B7CF4B-B96F-4B01-9E3A-1473726060BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
