@@ -7,36 +7,36 @@ using DevExpress.XtraGrid.Views.Grid;
 
 namespace OSPSuite.DataBinding.DevExpress.Starter
 {
-    partial class FormTest
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+   partial class FormTest
+   {
+      /// <summary>
+      /// Required designer variable.
+      /// </summary>
+      private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-                _screenBinder.Dispose();
-                _gridBinder.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+      /// <summary>
+      /// Clean up any resources being used.
+      /// </summary>
+      /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+      protected override void Dispose(bool disposing)
+      {
+         if (disposing && (components != null))
+         {
+            components.Dispose();
+            _screenBinder.Dispose();
+            _gridBinder.Dispose();
+         }
+         base.Dispose(disposing);
+      }
 
-        #region Windows Form Designer generated code
+      #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+      /// <summary>
+      /// Required method for Designer support - do not modify
+      /// the contents of this method with the code editor.
+      /// </summary>
+      private void InitializeComponent()
+      {
          this.components = new System.ComponentModel.Container();
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTest));
          this.dxErrorProvider = new DXErrorProvider(this.components);
@@ -60,6 +60,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          this.colorEdit = new ColorEdit();
          this.mruEdit1 = new MRUEdit();
          this.memoEdit = new MemoEdit();
+         this.textEditForInt = new TextEdit();
          ((System.ComponentModel.ISupportInitialize)(this.dxErrorProvider)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.textEdit.Properties)).BeginInit();
@@ -76,6 +77,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          ((System.ComponentModel.ISupportInitialize)(this.colorEdit.Properties)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.mruEdit1.Properties)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.memoEdit.Properties)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.textEditForInt.Properties)).BeginInit();
          this.SuspendLayout();
          // 
          // dxErrorProvider
@@ -242,11 +244,19 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          this.memoEdit.Size = new System.Drawing.Size(414, 115);
          this.memoEdit.TabIndex = 18;
          // 
+         // textEditForInt
+         // 
+         this.textEditForInt.Location = new System.Drawing.Point(446, 4);
+         this.textEditForInt.Name = "textEditForInt";
+         this.textEditForInt.Size = new System.Drawing.Size(100, 20);
+         this.textEditForInt.TabIndex = 19;
+         // 
          // FormTest
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(928, 486);
+         this.Controls.Add(this.textEditForInt);
          this.Controls.Add(this.memoEdit);
          this.Controls.Add(this.mruEdit1);
          this.Controls.Add(this.colorEdit);
@@ -282,33 +292,35 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          ((System.ComponentModel.ISupportInitialize)(this.colorEdit.Properties)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.mruEdit1.Properties)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.memoEdit.Properties)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.textEditForInt.Properties)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 
-        }
+      }
 
-        #endregion
+      #endregion
 
-        private global::DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider dxErrorProvider;
-        private global::DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider;
-        private global::DevExpress.XtraEditors.TextEdit textEdit;
-        private global::DevExpress.XtraEditors.SimpleButton btnApply;
-        private global::DevExpress.XtraEditors.LabelControl lableText;
-        private global::DevExpress.XtraEditors.TextEdit textEditDouble;
-        private global::DevExpress.XtraEditors.TextEdit textEditLastName;
-        private global::DevExpress.XtraGrid.GridControl gridControl;
-        private global::DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private TextEdit anotherTextBox;
-        private System.Windows.Forms.RichTextBox rtbDump;
-        private SimpleButton btnReset;
-        private ComboBoxEdit comboBoxEdit1;
-        private TextEdit textNullableEdit;
-        private ImageComboBoxEdit imageComboBoxEdit1;
-        private System.Windows.Forms.ImageList imageList1;
-        private CheckEdit chkEdit;
-        private ListBoxControl listBoxControl;
-        private ColorEdit colorEdit;
-        private MRUEdit mruEdit1;
-        private MemoEdit memoEdit;
-    }
+      private DXErrorProvider dxErrorProvider;
+      private DXValidationProvider dxValidationProvider;
+      private TextEdit textEdit;
+      private SimpleButton btnApply;
+      private LabelControl lableText;
+      private TextEdit textEditDouble;
+      private TextEdit textEditLastName;
+      private GridControl gridControl;
+      private GridView gridView1;
+      private TextEdit anotherTextBox;
+      private System.Windows.Forms.RichTextBox rtbDump;
+      private SimpleButton btnReset;
+      private ComboBoxEdit comboBoxEdit1;
+      private TextEdit textNullableEdit;
+      private ImageComboBoxEdit imageComboBoxEdit1;
+      private System.Windows.Forms.ImageList imageList1;
+      private CheckEdit chkEdit;
+      private ListBoxControl listBoxControl;
+      private ColorEdit colorEdit;
+      private MRUEdit mruEdit1;
+      private MemoEdit memoEdit;
+      private TextEdit textEditForInt;
+   }
 }
