@@ -87,7 +87,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _screenBinder.Bind(item => item.Value).To(textEditDouble);
          _screenBinder.Bind(item => item.Log).To(memoEdit);
 
-         _screenBinder.Bind(item => item.NullableValue).To(textNullableEdit);
+         _screenBinder.Bind(item => item.IntValue).To(textNullableEdit);
          _screenBinder.Bind(item => item.MyColor).To(colorEdit);
          _screenBinder.Bind(item => item.FirstName).To(mruEdit1);
          _screenBinder.Bind(item => item.ValueFromList).To(comboBoxEdit1).WithValues(item => item.ListOfValues).AndDisplays(item => item.ListOfDisplayValues);

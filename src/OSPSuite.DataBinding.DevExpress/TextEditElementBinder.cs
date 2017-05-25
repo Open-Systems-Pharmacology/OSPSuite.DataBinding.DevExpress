@@ -39,6 +39,10 @@ namespace OSPSuite.DataBinding.DevExpress
          {
             e.DisplayText = string.Empty;
          }
+         catch (OverflowException)
+         {
+            _textBox.EditValue = LastValue;
+         }
       }
    }
 }
