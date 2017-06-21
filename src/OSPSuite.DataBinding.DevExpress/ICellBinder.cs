@@ -43,19 +43,23 @@ namespace OSPSuite.DataBinding.DevExpress
         /// Resets the property to its original value
         /// </summary>
         void Reset();
-
-
+      
         /// <summary>
         /// Event will be raised before writting a value in the source so that a caller
         /// can take over the action source.Property = value (e.g. for undo/redo actions or protocols).
         /// The value will be set in the source from the control in any case to ensure a bi-directional binding 
         /// </summary>
-        event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueSet;
+        event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueUpdating;
 
-        /// <summary>
-        /// Event is raised when the value was changed in the element
-        /// </summary>
-        event Action<TObjectType> OnChanged;
+       /// <summary>
+       /// Event will be raised once the value was updated in the source
+       /// </summary>
+       event Action<TObjectType, TPropertyType> OnValueUpdated;
+
+      /// <summary>
+      /// Event is raised when the value was changed in the element or in the source
+      /// </summary>
+      event Action<TObjectType> OnChanged;
 
         void DeleteBinding();
     }

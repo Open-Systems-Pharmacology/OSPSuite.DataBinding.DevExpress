@@ -27,7 +27,9 @@ namespace OSPSuite.DataBinding.DevExpress.XtraGrid
       private readonly GridViewBinder<TObjectType> _parentBinder;
       private readonly PropertyInfo _propertyInfo;
       private readonly ICache<TObjectType, ICellBinder<TObjectType, TPropertyType>> _cellBinders;
-      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueSet = delegate { };
+      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueUpdating = delegate { };
+      public event Action<TObjectType, TPropertyType> OnValueUpdated = delegate { };
+
       public Func<TObjectType, IFormatter<TPropertyType>> Formatter { get; set; }
       private readonly IValidationEngine _validationEngine;
 
@@ -71,7 +73,8 @@ namespace OSPSuite.DataBinding.DevExpress.XtraGrid
          _cellBinders.Add(cellBinder);
 
          //relay the change event of one cell to the change event of the column
-         cellBinder.OnValueSet += (o, e) => OnValueSet(o, e);
+         cellBinder.OnValueUpdating += (o, e) => OnValueUpdating(o, e);
+         cellBinder.OnValueUpdated += (o, e) => OnValueUpdated(o, e);
          cellBinder.OnChanged += OnNotifyChanged;
          return cellBinder;
       }

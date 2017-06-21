@@ -94,7 +94,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _screenBinder.Bind(item => item.ValueFromList).To(comboBoxEdit1).WithValues(item => item.ListOfValues).AndDisplays(item => item.ListOfDisplayValues);
          _screenBinder.Bind(item => item.ValueFromList).To(listBoxControl).WithValues(item => item.ListOfValues).AndDisplays(item => item.ListOfDisplayValues);
 
-         _screenBinder.Bind(iten => iten.BoolValue).To(chkEdit).WithCaption("one caption").OnValueSet += OnBoolValueSet;
+         _screenBinder.Bind(iten => iten.BoolValue).To(chkEdit).WithCaption("one caption").OnValueUpdating += OnBoolValueSet;
 
          _screenBinder.Bind(item => item.ValueFromList).To(imageComboBoxEdit1)
             .WithImages(ImagesFor)
@@ -107,7 +107,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _screenBinder2.Bind(item => item.LastName).To(anotherTextBox);
 
          _gridBinder.Bind(item => item.FirstName).AsReadOnly();
-         _gridBinder.Bind(item => item.LastName).OnValueSet += OnLastNameSet;
+         _gridBinder.Bind(item => item.LastName).OnValueUpdating += OnLastNameSet;
          _gridBinder.Bind(item => item.NullableValue).WithCaption("My Nullable Set");
          _gridBinder.Bind(item => item.Value)
             .WithCaption("My Value Set");
@@ -115,7 +115,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _gridBinder.Bind(item => item.Value)
             .WithRepository(MyBarRepository)
             .WithEditRepository(MyRepoForDouble)
-            .WithCaption("My Value Bar").OnValueSet += OnValueSet;
+            .WithCaption("My Value Bar").OnValueUpdating += OnValueSet;
 
          _gridBinder.AutoBind(item => item.Value)
             .WithRepository(MyRepoForDouble)
@@ -124,7 +124,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _gridBinder.AutoBind(item => item.IntValue)
             .WithCaption("Int Value")
             .WithFilterPopupMode(FilterPopupMode.Default)
-            .WithOnValueSet(AutoBindOnValueSet);
+            .WithOnValueUpdating(AutoBindOnValueSet);
 
          _gridBinder.AddUnboundColumn()
             .WithCaption("A great button")

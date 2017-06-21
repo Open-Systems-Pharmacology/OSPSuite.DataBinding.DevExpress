@@ -41,10 +41,16 @@ namespace OSPSuite.DataBinding.DevExpress
       Func<TObjectType, IFormatter<TPropertyType>> Formatter { get; set; }
 
       /// <summary>
-      ///    Action to perform when a value is set into a column. Event is raised only if validation
-      ///    was successful.
+      ///    Event is raised when a value is being updating into the cell of column and only if validation
+      ///    was successful. The value is not set into the source object yet.
       /// </summary>
-      event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueSet;
+      event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueUpdating;
+
+      /// <summary>
+      ///    Event is raised when a value was updated into the cell of column and only if validation
+      ///    was successful.  if using <see cref="BindingMode.TwoWay"/> the value was updated into the source object.
+      /// </summary>
+      event Action<TObjectType, TPropertyType> OnValueUpdated;
    }
 
    public interface IValidatableColumn<TObjectType> : IColumn<TObjectType>

@@ -9,7 +9,8 @@ namespace OSPSuite.DataBinding.DevExpress
    {
       protected IBinder _parentBinder;
       protected readonly IPropertyBinderNotifier<TObjectType, TPropertyType> _propertyBinder;
-      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueSet = delegate { };
+      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueUpdating = delegate { };
+      public event Action<TObjectType, TPropertyType> OnValueUpdated = delegate { };
       public event Action<TObjectType> OnChanged = delegate { };
       public TObjectType Source { get; private set; }
       private TPropertyType _originalValue;
@@ -36,12 +37,13 @@ namespace OSPSuite.DataBinding.DevExpress
                //before setting the value to the source, raise the on OnValueSet event
                //to allow caller to take over the actual action of setting the value
                var oldValue = GetValueFromSource();
-               OnValueSet(Source, new PropertyValueSetEventArgs<TPropertyType>(_propertyBinder.PropertyName, oldValue, value));
+               OnValueUpdating(Source, new PropertyValueSetEventArgs<TPropertyType>(_propertyBinder.PropertyName, oldValue, value));
 
                if (bindingModeIsTwoWay)
                {
                   //set control value into source
                   _propertyBinder.SetValue(Source, value);
+                  OnValueUpdated(Source, value);
                }
 
                notifyChange();
@@ -99,7 +101,9 @@ namespace OSPSuite.DataBinding.DevExpress
 
       public void DeleteBinding()
       {
-         OnValueSet = delegate { };
+         OnValueUpdating = delegate { };
+         OnValueUpdated = delegate { };
+         OnChanged = delegate { };
          _propertyBinder.RemoveValueChangedListener(Source);
       }
    }
