@@ -28,10 +28,10 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
         private void InitializeBinding()
         {
             _gridBinder.Bind(item => item.FirstName).AsReadOnly();
-            _gridBinder.Bind(item => item.LastName).WithOnValueSet(OnLastNameSet);
+            _gridBinder.Bind(item => item.LastName).WithOnValueUpdating(OnLastNameSet);
             _gridBinder.Bind(item => item.NullableValue).WithCaption("My Nullable Set");
             _gridBinder.Bind(item => item.Value).WithCaption("My Value Set");
-            _gridBinder.Bind(item => item.Value).WithCaption("My Value Bar").OnValueSet += OnValueSet;
+            _gridBinder.Bind(item => item.Value).WithCaption("My Value Bar").OnValueUpdating += OnValueSet;
 
         
             _gridBinder.Changed += GridBinderChanged;

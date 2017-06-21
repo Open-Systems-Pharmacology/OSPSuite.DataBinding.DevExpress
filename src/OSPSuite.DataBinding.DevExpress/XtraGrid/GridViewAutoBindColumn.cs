@@ -20,7 +20,8 @@ namespace OSPSuite.DataBinding.DevExpress.XtraGrid
       private readonly PropertyInfo _propertyInfo;
       private readonly IValidationEngine _validationEngine;
       public Func<TObjectType, IFormatter<TPropertyType>> Formatter { get; set; }
-      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueSet = delegate { };
+      public event Action<TObjectType, PropertyValueSetEventArgs<TPropertyType>> OnValueUpdating = delegate { };
+      public event Action<TObjectType, TPropertyType> OnValueUpdated = delegate { };
 
       public GridViewAutoBindColumn(GridViewBinder<TObjectType> parentBinder, PropertyInfo propertyInfo)
          : this(parentBinder, propertyInfo, new ValidationEngine(), new GridColumnCreator())
@@ -71,7 +72,9 @@ namespace OSPSuite.DataBinding.DevExpress.XtraGrid
 
       public void NotifyValueChanged(TObjectType sourceObject, object oldValue, object newValue)
       {
-         OnValueSet(sourceObject, new PropertyValueSetEventArgs<TPropertyType>(PropertyName, oldValue.ConvertedTo<TPropertyType>(), newValue.ConvertedTo<TPropertyType>()));
+         var newValueTyped = newValue.ConvertedTo<TPropertyType>();
+         OnValueUpdating(sourceObject, new PropertyValueSetEventArgs<TPropertyType>(PropertyName, oldValue.ConvertedTo<TPropertyType>(), newValueTyped));
+         OnValueUpdated(sourceObject, newValueTyped);
          OnNotifyChanged(sourceObject);
       }
    }
