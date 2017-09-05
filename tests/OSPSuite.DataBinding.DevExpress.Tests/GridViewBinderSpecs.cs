@@ -116,7 +116,7 @@ namespace OSPSuite.DataBinding.DevExpress.Tests
 
       protected override void Because()
       {
-         _richList.CollectionChanged += Raise.With< NotifyCollectionChangedEventHandler>(_richList, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+         _richList.CollectionChanged += Raise.FreeForm.With(_richList, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
       }
 
       [Observation]
