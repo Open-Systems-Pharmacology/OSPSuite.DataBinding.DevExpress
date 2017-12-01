@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OSPSuite.DataBinding.DevExpress</RootNamespace>
     <AssemblyName>OSPSuite.DataBinding.DevExpress</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -144,11 +144,11 @@
       <HintPath>..\..\packages\OSPSuite.DevExpress.17.1.5\lib\net45\DevExpress.XtraVerticalGrid.v17.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OSPSuite.DataBinding, Version=2.1.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DataBinding.2.1.0.5\lib\net452\OSPSuite.DataBinding.dll</HintPath>
+    <Reference Include="OSPSuite.DataBinding, Version=2.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DataBinding.2.2.0.1\lib\net462\OSPSuite.DataBinding.dll</HintPath>
     </Reference>
-    <Reference Include="OSPSuite.Utility, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.Utility.2.0.1.4\lib\net452\OSPSuite.Utility.dll</HintPath>
+    <Reference Include="OSPSuite.Utility, Version=3.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.Utility.3.0.0.1\lib\net462\OSPSuite.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

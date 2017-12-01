@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OSPSuite.DataBinding.DevExpress.Tests</RootNamespace>
     <AssemblyName>OSPSuite.DataBinding.DevExpress.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -143,22 +143,21 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FakeItEasy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=eff28e2146d5fd2c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FakeItEasy.4.0.0\lib\net45\FakeItEasy.dll</HintPath>
+      <HintPath>..\..\packages\FakeItEasy.4.2.0\lib\net45\FakeItEasy.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="OSPSuite.BDDHelper, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\OSPSuite.BDDHelper.2.0.0.1\lib\net45\OSPSuite.BDDHelper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OSPSuite.DataBinding, Version=2.1.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DataBinding.2.1.0.5\lib\net452\OSPSuite.DataBinding.dll</HintPath>
+    <Reference Include="OSPSuite.DataBinding, Version=2.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DataBinding.2.2.0.1\lib\net462\OSPSuite.DataBinding.dll</HintPath>
     </Reference>
-    <Reference Include="OSPSuite.Utility, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.Utility.2.0.1.4\lib\net452\OSPSuite.Utility.dll</HintPath>
+    <Reference Include="OSPSuite.Utility, Version=3.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.Utility.3.0.0.1\lib\net462\OSPSuite.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -203,6 +202,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
