@@ -2,7 +2,7 @@ configuration: Debug
 image: Visual Studio 2019
 
 environment:
-  app_version: '4.0.0'
+  app_version: '5.0.0'
 
 version: '$(app_version).{build}'
 
@@ -45,10 +45,5 @@ skip_tags: true
 
 branches:
   only:
-  - master
+  - main
   - develop
-
-notifications:
-  - provider: Slack
-    incoming_webhook:      
-      secure: 4MH9Em6TtrKalq6808dhPOqypTfYBJvVlqPaa9akNyF1h7st5qNdNezFp6T+bWXqrcZ4q/smtPcJ7LkUFHL46JDYUFlIL8FDz+ApX/vP+x0=
