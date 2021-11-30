@@ -55,80 +55,83 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.BonusSkins.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.BonusSkins.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Charts.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Charts.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Data.Desktop.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Data.Desktop.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Data.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Data.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Images.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Images.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.Images.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Images.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Office.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Office.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Pdf.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Pdf.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.PivotGrid.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.PivotGrid.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Printing.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Printing.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.RichEdit.v20.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.RichEdit.v21.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.RichEdit.v20.1.Export.dll</HintPath>
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.RichEdit.v21.2.Export.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.Utils.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.Utils.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraBars.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraBars.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraCharts.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraCharts.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraCharts.v20.1.UI.dll</HintPath>
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraCharts.v21.2.UI.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraCharts.v20.1.Wizard.dll</HintPath>
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraCharts.v21.2.Wizard.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraEditors.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraDialogs.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraDialogs.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraEditors.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraLayout.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraGrid.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraNavBar.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraLayout.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraNavBar.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraPrinting.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraPivotGrid.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraPrinting.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraTreeList.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraRichEdit.v21.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OSPSuite.DevExpress.20.1.6\lib\net45\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraTreeList.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OSPSuite.DevExpress.21.2.3\lib\net45\DevExpress.XtraVerticalGrid.v21.2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="OSPSuite.DataBinding, Version=3.0.0.4, Culture=neutral, processorArchitecture=MSIL">
