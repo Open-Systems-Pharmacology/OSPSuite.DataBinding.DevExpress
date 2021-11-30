@@ -2,7 +2,7 @@ configuration: Debug
 image: Visual Studio 2019
 
 environment:
-  app_version: '5.0.0'
+  app_version: '6.0.0'
 
 version: '$(app_version).{build}'
 
