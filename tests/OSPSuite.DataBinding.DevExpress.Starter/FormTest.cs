@@ -90,6 +90,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
          _screenBinder.Bind(item => item.NullableValue).To(textNullableEdit);
          _screenBinder.Bind(item => item.IntValue).To(textEditForInt);
          _screenBinder.Bind(item => item.MyColor).To(colorEdit);
+         _screenBinder.Bind(item => item.MyNullableColor).To(nullableColorEdit);
          _screenBinder.Bind(item => item.FirstName).To(mruEdit1);
          _screenBinder.Bind(item => item.ValueFromList).To(comboBoxEdit1).WithValues(item => item.ListOfValues).AndDisplays(item => item.ListOfDisplayValues);
          _screenBinder.Bind(item => item.ValueFromList).To(listBoxControl).WithValues(item => item.ListOfValues).AndDisplays(item => item.ListOfDisplayValues);
@@ -140,7 +141,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
       private void AutoBindOnValueSet(IAnInterface arg1, PropertyValueSetEventArgs<int> arg2)
       {
-         AddLine(string.Format("Autobind value was set from : {0} to {1}", arg2.OldValue, arg2.NewValue));
+         AddLine($"Autobind value was set from : {arg2.OldValue} to {arg2.NewValue}");
       }
 
       private IFormatter<double> GetFormat(IAnInterface anInterface)
@@ -159,7 +160,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
          public string Format(double valueToFormat)
          {
-            return string.Format("{0} for {1}", valueToFormat, _anInterface.FirstName);
+            return $"{valueToFormat} for {_anInterface.FirstName}";
          }
       }
 
@@ -173,7 +174,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
       private void OnBoolValueSet(IAnInterface arg1, PropertyValueSetEventArgs<bool> arg2)
       {
-         AddLine(string.Format("Boolean value was set from : {0} to {1}", arg2.OldValue ? "checked" : "unchecked", arg2.NewValue ? "checked" : "unchecked"));
+         AddLine($"Boolean value was set from : {(arg2.OldValue ? "checked" : "unchecked")} to {(arg2.NewValue ? "checked" : "unchecked")}");
       }
 
       private RepositoryItem RepositoryItemButton(IAnInterface arg)
@@ -183,7 +184,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
       private void OnLastNameSet(IAnInterface arg1, PropertyValueSetEventArgs<string> arg2)
       {
-         AddLine(string.Format("Last name set: new = {0}, old = {1}", arg2.NewValue, arg1.LastName));
+         AddLine($"Last name set: new = {arg2.NewValue}, old = {arg1.LastName}");
       }
 
       private int ImagesFor(string arg)
@@ -202,7 +203,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
       private void OnValueSet(IAnInterface arg1, PropertyValueSetEventArgs<double> arg)
       {
-         AddLine(string.Format("Value set: new = {0}, old = {1}", arg.NewValue, arg1.Value));
+         AddLine($"Value set: new = {arg.NewValue}, old = {arg1.Value}");
       }
 
       private void GridBinderChanged()
@@ -212,7 +213,7 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
       private void AddLine(string message)
       {
-         rtbDump.AppendText(string.Format("{0}\n", message));
+         rtbDump.AppendText($"{message}\n");
       }
 
       private void OnValidated(object control)
