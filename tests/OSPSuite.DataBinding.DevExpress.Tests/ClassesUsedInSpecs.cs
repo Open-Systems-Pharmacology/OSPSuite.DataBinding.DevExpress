@@ -60,6 +60,7 @@ namespace OSPSuite.DataBinding.DevExpress.Tests
       bool BoolValue { get; set; }
 
       Color MyColor { get; set; }
+      Color? MyNullableColor { get; set; }
 
       IEnumerable<IAnInterface> Children { get; }
       double PercentValue { get; set; }
@@ -74,6 +75,7 @@ namespace OSPSuite.DataBinding.DevExpress.Tests
       public double? NullableValue { get; set; }
       public bool BoolValue { get; set; }
       public Color MyColor { get; set; }
+      public Color? MyNullableColor { get; set; }
 
       public IEnumerable<IAnInterface> Children
       {

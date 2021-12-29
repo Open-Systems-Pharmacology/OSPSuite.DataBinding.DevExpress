@@ -66,6 +66,14 @@ namespace OSPSuite.DataBinding.DevExpress
          return element;
       }
 
+
+      public static NullableColorEditElementBinder<TObject> To<TObject>(this IScreenToElementBinder<TObject, Color?> screenToElementBinder, ColorEdit colorEdit)
+      {
+         var element = new NullableColorEditElementBinder<TObject>(screenToElementBinder.PropertyBinder, colorEdit);
+         screenToElementBinder.ScreenBinder.AddElement(element);
+         return element;
+      }
+
       public static ImageComboBoxEditElementBinder<TObject, TProperty> To<TObject, TProperty>(this IScreenToElementBinder<TObject, TProperty> screenToElementBinder,
                                                                                                               ImageComboBoxEdit imageComboBoxEdit)
       {
