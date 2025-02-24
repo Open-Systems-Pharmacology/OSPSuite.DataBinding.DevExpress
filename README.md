@@ -3,7 +3,7 @@
 DataBinding Framework for DevExpress components used in the Open Systems Pharmacology Suite.
 
 ## Code Status
-[![NuGet version](https://img.shields.io/nuget/v/OSPSuite.DataBinding.DevExpress.svg?style=flat)](https://www.nuget.org/packages/OSPSuite.DataBinding.DevExpress)
+[![Build status](https://img.shields.io/github/actions/workflow/status/Open-Systems-Pharmacology/OSPSuite.DataBinding.DevExpress/build-and-publish.yml?logo=nuget&label=Build%20status)](https://github.com/Open-Systems-Pharmacology/OSPSuite.DataBinding.DevExpress/actions/workflows/build-and-publish.yml)
 [![Build status](https://ci.appveyor.com/api/projects/status/tlnv4qm6dhq32811/branch/master?svg=true&passingText=master%20-%20passing)](https://ci.appveyor.com/project/open-systems-pharmacology-ci/ospsuite-databinding-devexpress/branch/master)
 
 ## Code of conduct
@@ -14,4 +14,4 @@ We encourage contribution to the Open Systems Pharmacology community. Before get
 If you are contributing code, please be familiar with the [coding standards](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/CODING_STANDARDS.md).
 
 ## License
-OSPSuite.DataBinding.DevExpress is released under the [GPLv2 License](LICENSE).
+OSPSuite.DataBinding.DevExpress is released under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/LICENSE).

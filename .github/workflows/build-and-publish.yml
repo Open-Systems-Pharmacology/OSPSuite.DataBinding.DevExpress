@@ -1,0 +1,68 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+    - main
+
+  pull_request:
+    branches:
+    - main
+
+env:
+  MAJOR: 6
+  MINOR: 0
+  MINORMINOR: 1 
+  RUN: ${{ github.run_number }}
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restore dependencies
+        run: |
+          nuget sources add -name bddhelper -source https://ci.appveyor.com/nuget/ospsuite-bddhelper 
+          nuget sources add -name utility -source https://ci.appveyor.com/nuget/ospsuite-utility 
+          nuget sources add -name databinding -source https://ci.appveyor.com/nuget/ospsuite-databinding
+          nuget restore
+
+      - name: define env variables
+        run: |
+          echo "APP_VERSION=${{ env.MAJOR }}.${{ env.MINOR }}.${{ env.MINORMINOR }}.${{ env.RUN }}" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Build
+        run: msbuild OSPSuite.DataBinding.DevExpress.sln /p:Version=${{env.APP_VERSION}}
+
+      - name : Test
+        run: dotnet test .\tests\**\bin\Debug\net472\OSPSuite*Tests.dll -v normal --no-build  --logger:"html;LogFileName=../testLog_Windows.html"
+
+      - name: Pack the project
+        run: dotnet pack .\OSPSuite.DataBinding.DevExpress.sln --no-build --no-restore -o ./ -p:PackageVersion=${{env.APP_VERSION}} --configuration=Debug --no-build
+
+      - name: Push nupkg as artifact
+        # if it is a push to a branch
+        if: github.event_name == 'push' && github.ref_name != github.event.repository.default_branch
+        uses: actions/upload-artifact@v4
+        with:
+          name: OSPSuite.DataBinding.DevExpress
+          path: ./*.nupkg
+
+      - name: Push test log as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: testLog_Windows
+          path: ./testLog*.html
+
+      - name: Publish to GitHub registry
+        # if it is a merge to default branch
+        if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+        run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/${{github.repository_owner}}/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
