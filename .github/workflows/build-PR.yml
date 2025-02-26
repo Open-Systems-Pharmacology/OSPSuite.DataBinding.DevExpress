@@ -26,9 +26,7 @@ jobs:
 
       - name: Restore dependencies
         run: |
-          nuget sources add -name bddhelper -source https://ci.appveyor.com/nuget/ospsuite-bddhelper 
-          nuget sources add -name utility -source https://ci.appveyor.com/nuget/ospsuite-utility 
-          nuget sources add -name databinding -source https://ci.appveyor.com/nuget/ospsuite-databinding
+          nuget sources add -username Open-Systems-Pharmacology -password ${{ secrets.GITHUB_TOKEN }} -name OSP-GitHub-Packages -source "https://nuget.pkg.github.com/Open-Systems-Pharmacology/index.json"
           nuget restore
 
       - name: define env variables
