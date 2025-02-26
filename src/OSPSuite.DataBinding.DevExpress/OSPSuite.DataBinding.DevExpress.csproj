@@ -23,7 +23,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="OSPSuite.DataBinding" Version="3.0.0.4" />
+    <PackageReference Include="OSPSuite.DataBinding" Version="3.0.1.1" />
     <PackageReference Include="OSPSuite.DevExpress" Version="21.2.15" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="OSPSuite.Utility" Version="4.1.1.1" />
