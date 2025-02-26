@@ -14,4 +14,4 @@ We encourage contribution to the Open Systems Pharmacology community. Before get
 If you are contributing code, please be familiar with the [coding standards](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/CODING_STANDARDS.md).
 
 ## License
-OSPSuite.DataBinding.DevExpress is released under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/LICENSE).
+OSPSuite.DataBinding.DevExpress is released under the [GPLv2 License](LICENSE).
