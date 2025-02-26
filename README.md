@@ -4,7 +4,7 @@ DataBinding Framework for DevExpress components used in the Open Systems Pharmac
 
 ## Code Status
 [![Build status](https://img.shields.io/github/actions/workflow/status/Open-Systems-Pharmacology/OSPSuite.DataBinding.DevExpress/build-and-publish.yml?logo=nuget&label=Build%20status)](https://github.com/Open-Systems-Pharmacology/OSPSuite.DataBinding.DevExpress/actions/workflows/build-and-publish.yml)
-[![Build status](https://ci.appveyor.com/api/projects/status/tlnv4qm6dhq32811/branch/master?svg=true&passingText=master%20-%20passing)](https://ci.appveyor.com/project/open-systems-pharmacology-ci/ospsuite-databinding-devexpress/branch/master)
+
 
 ## Code of conduct
 Everyone interacting in the Open Systems Pharmacology community (codebases, issue trackers, chat rooms, mailing lists etc...) is expected to follow the Open Systems Pharmacology [code of conduct](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/CODE_OF_CONDUCT.md).
