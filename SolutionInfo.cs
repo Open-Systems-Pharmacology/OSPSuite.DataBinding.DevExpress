@@ -5,6 +5,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("OSPSuite.DataBinding.DevExpress")]
 [assembly: AssemblyCopyright("Copyright © 2002-2020 - Open Systems Pharmacology Community")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: InternalsVisibleTo("OSPSuite.DataBinding.DevExpress.Tests")]
