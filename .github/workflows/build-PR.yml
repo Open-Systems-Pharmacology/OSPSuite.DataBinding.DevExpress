@@ -1,4 +1,4 @@
-name: Build pull request
+name: Build pull request ${{ env.APP_VERSION }}
 
 on:
   pull_request:
