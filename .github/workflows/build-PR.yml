@@ -1,7 +1,4 @@
 name: Build pull request
-run-name: Version 6.0.1.${{ github.run_number }} (${{ github.event.head_commit.message }})
-#run-name: Version ${{ github.env.APP_VERSION }} # NOPE: ${{ github.env.APP_VERSION }} is empty 
-#run-name: Version 6.0.1.${{ github.run_number }} #OK
 
 on:
   pull_request:
