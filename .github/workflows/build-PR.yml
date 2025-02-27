@@ -1,5 +1,6 @@
 name: Build pull request
-run-name: Version 6.0.1.${{ github.run_number }}
+run-name: Version ${{ github.env.APP_VERSION }}
+#run-name: Version 6.0.1.${{ github.run_number }}
 
 on:
   pull_request:
