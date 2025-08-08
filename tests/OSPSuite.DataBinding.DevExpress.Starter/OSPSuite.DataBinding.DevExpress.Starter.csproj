@@ -19,7 +19,6 @@
     <ProjectReference Include="..\..\src\OSPSuite.DataBinding.DevExpress\OSPSuite.DataBinding.DevExpress.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Castle.Core" Version="5.1.1" />
     <PackageReference Include="FakeItEasy" Version="8.3.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="NUnit" Version="3.14.0" />
