@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <PackageProjectUrl>https://github.com/Open-Systems-Pharmacology/OSPSuite.DataBinding.DevExpress</PackageProjectUrl>
@@ -23,9 +23,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="OSPSuite.DataBinding" Version="3.0.1.1" />
-    <PackageReference Include="OSPSuite.DevExpress" Version="21.2.15" />
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+     <PackageReference Include="OSPSuite.DataBinding" Version="3.0.1.2" />
+     <PackageReference Include="OSPSuite.DevExpress" Version="21.2.15.1" />
     <PackageReference Include="OSPSuite.Utility" Version="4.1.1.1" />
   </ItemGroup>
 
