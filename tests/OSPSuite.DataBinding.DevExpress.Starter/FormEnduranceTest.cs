@@ -1,8 +1,7 @@
+using OSPSuite.DataBinding.DevExpress.XtraGrid;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using OSPSuite.DataBinding.DevExpress.Tests;
-using OSPSuite.DataBinding.DevExpress.XtraGrid;
 
 namespace OSPSuite.DataBinding.DevExpress.Starter
 {

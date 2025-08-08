@@ -5,9 +5,8 @@ using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Base;
-using OSPSuite.Utility.Format;
-using OSPSuite.DataBinding.DevExpress.Tests;
 using OSPSuite.DataBinding.DevExpress.XtraGrid;
+using OSPSuite.Utility.Format;
 
 namespace OSPSuite.DataBinding.DevExpress.Starter
 {
@@ -34,15 +33,15 @@ namespace OSPSuite.DataBinding.DevExpress.Starter
 
          _repositoryItemButton.Buttons.Add(new EditorButton(ButtonPredefines.Glyph, "AAAA", -1, true, true, false, HorzAlignment.Center, null));
 
-         _source = new AnImplementation {FirstName = "Joe", LastName = "Black", Value = 10};
-         _source.Log = new List<string> {"Line1", "Line2"};
+         _source = new AnImplementation { FirstName = "Joe", LastName = "Black", Value = 10 };
+         _source.Log = new List<string> { "Line1", "Line2" };
          _screenBinder.BindToSource(_source);
          _screenBinder2.BindToSource(_source);
 
-         var obj2 = new AnImplementation {FirstName = "Jean", LastName = "Moulin", Value = 20};
-         var obj3 = new AnImplementation {FirstName = "Robes", LastName = "Pierre", Value = 30};
+         var obj2 = new AnImplementation { FirstName = "Jean", LastName = "Moulin", Value = 20 };
+         var obj3 = new AnImplementation { FirstName = "Robes", LastName = "Pierre", Value = 30 };
 
-         var sourceList = new List<IAnInterface> {_source, obj2, obj3};
+         var sourceList = new List<IAnInterface> { _source, obj2, obj3 };
          _gridBinder.BindToSource(GetSource(sourceList));
 
          var edit0 = gridView1.Columns[0].RealColumnEdit;

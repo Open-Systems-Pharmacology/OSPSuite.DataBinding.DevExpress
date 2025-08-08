@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using DevExpress.XtraEditors;
 using OSPSuite.Utility.Validation;
-using OSPSuite.DataBinding.DevExpress.Tests;
 using OSPSuite.DataBinding.DevExpress.XtraGrid;
 
 namespace OSPSuite.DataBinding.DevExpress.Starter
