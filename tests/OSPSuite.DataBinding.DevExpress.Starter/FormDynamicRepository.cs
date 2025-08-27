@@ -7,7 +7,7 @@ using OSPSuite.DataBinding.DevExpress.XtraGrid;
 
 namespace OSPSuite.DataBinding.DevExpress.Starter
 {
-    public partial class FormDynamicRepository : Form
+    public partial class FormDynamicRepository : XtraForm
     {
         private readonly GridControl gridControl = new GridControl();
         private readonly PopupContainerControl popupControl = new PopupContainerControl();
