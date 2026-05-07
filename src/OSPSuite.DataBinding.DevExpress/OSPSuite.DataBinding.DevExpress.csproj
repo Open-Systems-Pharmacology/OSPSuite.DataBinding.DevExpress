@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -25,7 +25,7 @@
   <ItemGroup>
     <PackageReference Include="DevExpress.Win.Grid" Version="25.2.7" />
     <PackageReference Include="DevExpress.Win.TreeList" Version="25.2.7" />
-    <PackageReference Include="OSPSuite.DataBinding" Version="3.0.1.4" />
+    <PackageReference Include="OSPSuite.DataBinding" Version="4.0.0.5" />
     <PackageReference Include="OSPSuite.Utility" Version="5.0.0.6" />
   </ItemGroup>
 

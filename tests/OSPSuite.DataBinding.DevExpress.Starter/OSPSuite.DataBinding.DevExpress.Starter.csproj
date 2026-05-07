@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <IsPackable>false</IsPackable>
     <TargetFramework>net10.0-windows</TargetFramework>
@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FakeItEasy" Version="8.3.0" />
-    <PackageReference Include="OSPSuite.DataBinding" Version="3.0.1.4" />
+    <PackageReference Include="OSPSuite.DataBinding" Version="4.0.0.5" />
     <PackageReference Include="OSPSuite.Utility" Version="5.0.0.6" />
   </ItemGroup>
 </Project>
